@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --chef-red: #FF6B6B;
+    --chef-blue: #4facfe;
+    --chef-yellow: #f9ca24;
+    --bg-soft: #F0F2F5;
+}
+
+body { background-color: var(--bg-soft); font-family: 'Poppins', sans-serif; }
+
+.main-content { padding: 40px; margin-left: 280px; }
+
+/* Welcome Banner */
+.welcome-card {
+    background: linear-gradient(135deg, var(--chef-red) 0%, #ff9f43 100%);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(255, 107, 107, 0.2);
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-avatar {
+    width: 70px; height: 70px;
+    background: white;
+    color: var(--chef-red);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; font-weight: 800;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Stat Cards Premium */
+.stat-card-premium {
+    height: 180px;
+    border-radius: 30px;
+    position: relative;
+    padding: 30px;
+    color: white;
+    overflow: hidden;
+    transition: 0.4s;
+    border: none;
+}
+.stat-card-premium:hover { transform: translateY(-10px); }
+
+.stat-card-premium.blue { background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); }
+.stat-card-premium.yellow { background: linear-gradient(135deg, #f9ca24 0%, #f0932b 100%); }
+.stat-card-premium.red { background: linear-gradient(135deg, #FF6B6B 0%, #eb4d4b 100%); }
+
+.stat-info i { font-size: 2.5rem; opacity: 0.3; position: absolute; right: 20px; top: 20px; }
+.stat-info h3 { font-size: 3rem; font-weight: 700; margin: 0; }
+.stat-info p { font-size: 1.1rem; opacity: 0.9; margin: 0; }
+
+/* Content Box */
+.content-box-premium {
+    background: white;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.03);
+}
+
+.custom-table thead th {
+    background: #F8FAFD;
+    border: none;
+    padding: 15px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a4b0be;
+    border-radius: 10px;
+}
+
+.badge-premium {
+    background: #f1f2f6;
+    color: #57606f;
+    padding: 8px 15px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.action-btn {
+    width: 40px; height: 40px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 12px;
+    margin-left: 8px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.action-btn.edit { background: #fff9e6; color: #f1c40f; }
+.action-btn.delete { background: #fff5f5; color: #ff4757; }
+.action-btn:hover { transform: scale(1.1); }
+
+.btn-chef {
+    background: var(--chef-red);
+    color: white;
+    border-radius: 15px;
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-chef:hover { background: #333; color: white; }
+
+.btn-logout-premium {
+    width: 50px; height: 50px;
+    background: white;
+    color: var(--chef-red);
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn-logout-premium:hover { background: #333; color: white; }
